@@ -5,6 +5,14 @@
 
 body {
     max-width: 100vw;
+    background-color: rgb(39, 38, 38);
+    color: rgb(240, 240, 240);
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+#heading {
+    font-size: 5rem;
 }
 
 .body-container {
@@ -13,6 +21,7 @@ body {
     grid-template-columns: repeat(5, 1fr);
     justify-content: space-between;
     grid-row-gap: 2rem;
+    
 }
 
 .body-container img {
@@ -20,5 +29,5 @@ body {
     height: 10rem;
     width: 14rem;
     border-radius: 17px;
-    border: 1px solid rgba(12, 11, 11, 0.664);
+    border: 1px solid rgba(255, 255, 255, 0.664);
 }

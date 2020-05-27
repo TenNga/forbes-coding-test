@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Flags</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@469&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main-container">
         <div class="header">
-           <h1>List of Country Flags</h1> 
+           <h1 id="heading">List of Country Flags</h1> 
         </div>
         <div class="body-container">
 
         </div>
     </div>
     <div class="nav">
-        <button>Prev</button>
-        <button onclick="handleNext()">Next</button>
+        <button onclick="handlePrev()" id="prev">Prev</button>
+        <button onclick="handleNext()" id="next">Next</button>
     </div>
     <script src="./js/script.js"></script>
 </body>

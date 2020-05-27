@@ -16,15 +16,36 @@ const insertHTML = (page) => {
 const handleNext = () => {
     bodyContainer.innerHTML= "";
     pageNumber++;
-    insertHTML(pageNumber);
+    if(pageNumber > countryPerPage.length-2){
+        insertHTML(pageNumber);
+        document.querySelector('#next').style.visibility = "hidden"; 
+    }
+    else
+        insertHTML(pageNumber);
+}
+
+const handlePrev = () => {
+    if(pageNumber === 0) return;
+    
+    bodyContainer.innerHTML= "";
+    pageNumber--;
+    if(countryPerPage.length-1 === pageNumber + 1 )
+        document.querySelector('#next').style.visibility = "visible"; 
+
+    if(pageNumber === 0){
+        insertHTML(pageNumber);
+        document.querySelector('#prev').style.visibility = "hidden"; 
+    }
+    else{
+        insertHTML(pageNumber);
+    }
 }
 
 const handleCountryData = (data) => {
     let endPoint = 10;
     let startPoint = 0;
-    data.length = 50;
 
-    while(endPoint <= 49){
+    while(endPoint <= 50){
         countryPerPage.push(data.slice(startPoint,endPoint));
         startPoint = endPoint;
         endPoint = endPoint + 10;
