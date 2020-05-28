@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Flags</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/model.css">
+    <link rel="stylesheet" href="./styles/media.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@469&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="main-container">
-        <div class="header">
+<body>  
+    <div class="header">
            <h1 id="heading">List of Country Flags</h1> 
-        </div>
+    </div>
+    <div class="nav">
+        <button onclick="handlePrev()" id="prev">Prev</button>
+        <button onclick="handleNext()" id="next">Next</button>
+    </div>
+    <div class="main-container">
+        
         <div class="body-container">
 
         </div>
@@ -19,10 +26,7 @@
     <div class="modal">
         <button id="close-button" onclick="handleCloseModal()">X</button>
     </div>
-    <div class="nav">
-        <button onclick="handlePrev()" id="prev">Prev</button>
-        <button onclick="handleNext()" id="next">Next</button>
-    </div>
+  
     <script src="./js/script.js"></script>
     <script src="./js/modal.js"></script>
 </body>

@@ -1,0 +1,42 @@
+@media (max-width: 1255px) {
+    .body-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+@media (max-width: 768px) {
+  .body-container {
+      margin: 1rem auto;
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  #modal-img {
+    width: 80vw;
+    height: auto;
+    margin-top: -20vh;
+    margin-left: -40vw;
+    }
+
+    #heading {
+        font-size: 4rem;
+    }
+}
+
+
+@media (max-width: 663px) {
+  .body-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  #heading {
+      font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+    .body-container {
+        grid-template-columns: 1fr;
+    }
+    #heading {
+        font-size: 2rem;
+    }
+  }
