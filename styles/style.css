@@ -31,3 +31,37 @@ body {
     border-radius: 17px;
     border: 1px solid rgba(255, 255, 255, 0.664);
 }
+
+.modal {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.747);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.modal #close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    color: red;
+    border-style: none;
+    border: 2px solid white;
+    border-radius: 3rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#modal-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 56rem;
+    height: 40rem;
+    margin-top: -20rem;
+    margin-left: -28rem;
+}

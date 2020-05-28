@@ -1,5 +1,6 @@
 const BASE_URL = "https://restcountries.eu/rest/v2/all";
 const PARAM = "?fields=name;flag;"
+
 const bodyContainer = document.querySelector('.body-container');
 const countryPerPage = [];
 let pageNumber = 0;
@@ -8,10 +9,11 @@ let pageNumber = 0;
 const insertHTML = (page) => {
     countryPerPage[page].map(country => {
         bodyContainer.insertAdjacentHTML("beforeend", `
-        <img src=${country.flag}>
+        <img onclick="handleImgClick(event)" src=${country.flag}>
     `)
     })
 }
+
 
 const handleNext = () => {
     bodyContainer.innerHTML= "";
@@ -26,7 +28,7 @@ const handleNext = () => {
 
 const handlePrev = () => {
     if(pageNumber === 0) return;
-    
+
     bodyContainer.innerHTML= "";
     pageNumber--;
     if(countryPerPage.length-1 === pageNumber + 1 )
