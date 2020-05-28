@@ -18,9 +18,14 @@ const insertHTML = (page) => {
 const handleNext = () => {
     bodyContainer.innerHTML= "";
     pageNumber++;
-    if(pageNumber > countryPerPage.length-2){
+
+    if(pageNumber >= countryPerPage.length-1){
         insertHTML(pageNumber);
         document.querySelector('#next').style.visibility = "hidden"; 
+    }
+    else if(pageNumber === 1){
+        insertHTML(pageNumber);
+        document.querySelector('#prev').style.visibility = "visible"; 
     }
     else
         insertHTML(pageNumber);

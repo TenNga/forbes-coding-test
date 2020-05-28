@@ -47,8 +47,8 @@ body {
     top: 1rem;
     right: 1rem;
     background: transparent;
-    color: red;
     border-style: none;
+    color: red;
     border: 2px solid white;
     border-radius: 3rem;
     padding: 1rem;
@@ -64,4 +64,25 @@ body {
     height: 40rem;
     margin-top: -20rem;
     margin-left: -28rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#prev, #next {
+    margin: 0 2rem;
+    padding: 1rem;
+    border-style: none;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+#prev:hover, #next:hover{
+    background-color: rgba(128, 128, 128, 0.336);
+    color: rgb(8, 8, 8);
+    font-weight: bold;
 }
