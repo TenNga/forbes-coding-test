@@ -1,5 +1,6 @@
 const modal = document.querySelector(".modal");
 
+//onclick image, display image in modal
 const handleImgClick = (e) => {
     const modalImag = document.querySelector('#modal-img');
     modal.style.display = "block";
@@ -12,7 +13,13 @@ const handleImgClick = (e) => {
     }
 }
 
+//close modal on clicking outside image
+const handleOuterClickModal = (e) => {
+    if (e.target.id === "modal-img") return;
+    modal.style.display = "none";
+}
+
+// close modal on clicking X
 const handleCloseModal = () => {
-    if(modal.style.display === "block")
         modal.style.display = "none";
 }

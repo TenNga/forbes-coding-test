@@ -1,6 +1,23 @@
 @media (max-width: 1255px) {
     .body-container {
         grid-template-columns: repeat(4, 1fr);
+        margin: 0.1rem 0.5rem;
+        height: 68vh;
+        overflow-x: hidden;
+    }
+    .nav {
+        margin-top: 2rem;
+    }
+
+    #heading {
+        font-size: 3.5rem;
+    }
+
+    #modal-img {
+        width: 50vw;
+        height: auto;
+        margin-top: -35vh;
+         margin-left: -30vw;
     }
   }
 
@@ -8,6 +25,7 @@
   .body-container {
       margin: 1rem auto;
       grid-template-columns: repeat(3, 1fr);
+      height: 74vh;
   }
 
   #modal-img {
@@ -17,9 +35,6 @@
     margin-left: -40vw;
     }
 
-    #heading {
-        font-size: 4rem;
-    }
 }
 
 
@@ -35,8 +50,16 @@
 @media (max-width: 400px) {
     .body-container {
         grid-template-columns: 1fr;
+        height: 70vh;
     }
     #heading {
         font-size: 2rem;
     }
   }
+
+@media (max-width: 850px) and (orientation: landscape) {
+   #heading {
+       margin: 0;
+       font-size: 1.5rem;
+   }
+} 
