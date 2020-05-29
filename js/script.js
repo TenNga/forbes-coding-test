@@ -9,7 +9,7 @@ let pageNumber = 0;
 const insertHTML = page => {
     countryPerPage[page].map(country => {
         bodyContainer.insertAdjacentHTML("beforeend", `
-        <img onclick="handleImgClick(event)" src=${country.flag}>
+        <img onclick="handleImgClick(event)" src=${country.flag} alt=${country.name}>
     `)
     })
 }
