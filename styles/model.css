@@ -32,3 +32,11 @@
     margin-top: -20rem;
     margin-left: -28rem;
 }
+
+.open {
+    display: block;
+}
+
+.close {
+    display: none
+}
