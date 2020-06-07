@@ -75,7 +75,7 @@ const handleCountryData = data => {
     let endPoint = 10; //10 per page
     let startPoint = 0;
 
-    while(endPoint <= data.length){
+    while(endPoint <= data.length || endPoint % data.length < 10){
         countryPerPage.push(data.slice(startPoint,endPoint));
         startPoint = endPoint;
         endPoint = endPoint + 10;
